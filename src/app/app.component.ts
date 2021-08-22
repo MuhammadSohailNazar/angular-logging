@@ -10,7 +10,7 @@ export class AppComponent {
   title = 'angular-logging';
 
   constructor(private logService:LogService ) {
-    this.logService.log("app component",'console executed from AppComponent');
+    this.logService.console.log("app component",'console executed from AppComponent');
   }
 
 }
