@@ -6,10 +6,10 @@ import { Injectable } from '@angular/core';
 export class LogService {
   constructor() {}
 
-  trace(...data: any[]): void {
-    console.log(data);
+  trace(source: string, ...data: any[]): void {
+    console.log(source, data);
   }
-  log(...data: any[]): void {
-    console.log(data);
+  log(source: string, ...data: any[]): void {
+    console.log(source,data);
   }
 }
